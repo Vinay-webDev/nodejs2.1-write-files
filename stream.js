@@ -7,10 +7,12 @@ const rs = fs.createReadStream(path.join(__dirname, 'files', 'lorem.txt'), {enco
 const ws = fs.createWriteStream(path.join(__dirname, 'files', 'newlorem.txt'));
 
 // now we'll listen for data!!!
+/*
 rs.on('data', (dataChunck) => {
     ws.write(dataChunck);
-});
-
+});*/
+//alternate method which is too easy***
+rs.pipe(ws);
 
 
 
