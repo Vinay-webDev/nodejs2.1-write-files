@@ -24,7 +24,7 @@ if (fs.existsSync('./new')) {
 };
 
 
-
+// this is like a sum == zero game we create directory if it doesn't exists and we delete directory if it exists****!!!!
 
 
 
